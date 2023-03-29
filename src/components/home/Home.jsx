@@ -1,6 +1,7 @@
 import React from "react";
 import profileImg from "../../assets/me.png";
 import { FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
+import resume from "../../assets/resume.pdf";
 import "./home.css";
 
 const Home = () => {
@@ -61,7 +62,7 @@ const Home = () => {
         </div>
 
         <div className="home__btns">
-          <a href="" className="btn text-cs">
+          <a href={resume}  download = "Resume" className="btn text-cs">
             Download CV
           </a>
 
