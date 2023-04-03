@@ -1,33 +1,22 @@
 import Project1 from "./assets/project1.jpeg"
-import Project2 from "./assets/project2.jpg"
-import Project3 from "./assets/project3.jpeg"
-import Project4 from "./assets/project4.jpeg"
-import Project5 from "./assets/project5.jpg"
-import Project6 from "./assets/project6.jpg"
+// import Project2 from "./assets/project2.jpg"
+// import Project3 from "./assets/project3.jpeg"
+// import Project4 from "./assets/project4.jpeg"
+// import Project5 from "./assets/project5.jpg"
+import Coming from "./assets/cm.jpg"
+// import Project6 from "./assets/project6.jpg"
 export const links = [
   {
     name: 'Home',
     path: 'home',
   },
   {
-    name: 'Skills',
-    path: 'skills',
+    name : 'Projects',
+    path : 'project'
   },
   {
     name: 'Works',
     path: 'work',
-  },
-  {
-    name: 'Resume',
-    path: 'resume',
-  },
-  {
-    name: 'Testimonials',
-    path: 'testimonial',
-  },
-  {
-    name: 'Pricing',
-    path: 'pricing',
   },
   {
     name: 'Blog',
@@ -43,15 +32,15 @@ export const links = [
 export const projects = [
   {
     id: 1,
-    img: Project1,
-    category: 'Branding',
-    title: 'Zorro',
+    img: Coming,
+    category: 'Development',
+    title: 'Kitab_Suchi',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
   },
   {
     id: 2,
-    img: Project2,
+    img:  Coming ,
     category: 'UI UX Design',
     title: 'Gooir',
     description:
@@ -59,7 +48,7 @@ export const projects = [
   },
   {
     id: 3,
-    img: Project3,
+    img:  Coming,
     category: 'Development',
     title: 'Explore',
     description:
@@ -67,7 +56,7 @@ export const projects = [
   },
   {
     id: 4,
-    img: Project4,
+    img:  Coming,
     category: 'Photography',
     title: 'Mozar',
     description:
@@ -75,7 +64,7 @@ export const projects = [
   },
   {
     id: 5,
-    img: Project5,
+    img: Coming,
     category: 'Development',
     title: 'Stay Fit',
     description:
@@ -83,7 +72,7 @@ export const projects = [
   },
   {
     id: 6,
-    img: Project6,
+    img:  Coming,
     category: 'Branding',
     title: 'Kana',
     description:

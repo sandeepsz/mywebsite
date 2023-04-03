@@ -20,7 +20,12 @@
   font-size: var(--small-font-size);
 }
 
-.home__subtitle,
+.home__subtitle{
+  color: var(--text-color);
+}
+.home_inner_subtitle{
+  color:var(--primary-color)
+}
 .home__title span {
   color: var(--primary-color);
 }
@@ -73,7 +78,7 @@
   left: -70%;
   width: 40px;
   height: 2px;
-  background-color: var(--secondary-color);
+  background-color: var(--text-color);
 }
 
 .home__img-wrapper {

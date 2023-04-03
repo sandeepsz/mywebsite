@@ -14,6 +14,7 @@
   --bg-color-alt: hsl(213, 10%, 21%);
   --container-color: hsl(217, 18%, 14%);
   --border-color: hsl(210, 2%, 65%);
+  --footer-border: rgba(255, 255, 255, 0.07);
   --first-gradient: linear-gradient(
     0deg,
     var(--bg-color-alt) 0%,
@@ -57,7 +58,29 @@
   --transition: cubic-bezier(0.3, 0, 0.3, 1);
 }
 
+/* LIGHT THEME */
+
+.light-theme {
+  --text-color:rgb(50, 50, 50);
+  --title-color: #262626; 
+  --bg-color: #f0ebe3;
+  --bg-color-alt: rgba(255,255,255,1);
+  --container-color: #ffffff;
+  --border-color: #000000;
+  --footer-border: rgba(41, 41, 41, 0.07);
+
+  /* shadow*/
+
+  --shadow: 5px 5px rgb(0 0 0 20%);
+}
+
+
+
 /* RESET  */
+
+html{
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0;
@@ -73,7 +96,7 @@ body {
 }
 
 body {
-  color: var(--secondary-color);
+  color: var(--text-color);
   background-color: var(--bg-color);
 }
 body.no-scroll {
@@ -142,7 +165,7 @@ img {
 }
 
 .btn {
-  border: 2px solid var(--secondary-color);
+  border: 2px solid var(--text-color);
   padding-inline: 40px;
   border-radius: 55px;
   box-shadow: var(--shadow);
@@ -197,6 +220,8 @@ img {
   background-color: var(--container-color);
   overflow: hidden;
   position: relative;
+  border-radius: 10px;
+
 }
 .card-two {
   padding: 30px;
@@ -204,10 +229,13 @@ img {
 
 @media only screen and (max-width: 768px) {
   .grid {
-    display:block;
+    display: block;
+  }
+  .card {
+   margin-bottom: 2.5%;
+  
   }
   .section {
-   margin-top:40%;
+    margin-top: 40%;
   }
-  
 }

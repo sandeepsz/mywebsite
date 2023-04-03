@@ -6,15 +6,15 @@ const footer = () => {
     <section className="footer">
       <div className="footer__container container socials-media grid">
         <div className="footer__socials">
-          <a className="footer__social-links">
+          <a  href= "https://twitter.com/SandeepNepali18" className="footer__social-links">
             <FaTwitter />
           </a>
 
-          <a className="footer__social-links">
+          <a href="https://www.instagram.com/sandeep_npbt/" className="footer__social-links">
             <FaInstagram />
           </a>
 
-          <a className="footer__social-links">
+          <a href="https://github.com/sandeepNpl" className="footer__social-links">
             <FaGithub />
           </a>
         </div>
