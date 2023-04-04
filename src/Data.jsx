@@ -54,9 +54,9 @@ export const projects = [
     id: 4,
     img:  Coming,
     category: 'Logo',
-    title: 'Mozar',
+    title: 'Rocket',
     link: 'https://www.youtube.com/',
-    demo : "Demo"
+    demo : "Steps"
   },
   {
     id: 5,
