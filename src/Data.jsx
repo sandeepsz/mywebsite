@@ -37,7 +37,7 @@ export const projects = [
   {
     id: 2,
     img:  Coming ,
-    category: 'UI UX Design',
+    category: 'UI UX ',
     title: 'Gooir',
     link: 'https://www.youtube.com/',
     demo : "Demo"
@@ -53,7 +53,7 @@ export const projects = [
   {
     id: 4,
     img:  Coming,
-    category: 'Photography',
+    category: 'Logo',
     title: 'Mozar',
     link: 'https://www.youtube.com/',
     demo : "Demo"

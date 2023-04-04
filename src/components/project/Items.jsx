@@ -1,5 +1,8 @@
 import React from "react";
 import { GoMarkGithub } from "react-icons/go";
+import { FaFigma } from "react-icons/fa";
+import { SiAdobeillustrator } from "react-icons/si";
+
 import { motion } from "framer-motion";
 
 const Items = ({ projectsItems }) => {
@@ -12,8 +15,7 @@ const Items = ({ projectsItems }) => {
             layout
             animate={{ opacity: 1, scale: 1 }}
             initial={{ opacity: 0.8, scale: 0.6 }}
-            exit = {{opacity: 0.8, scale: 0.6}}
-
+            exit={{ opacity: 0.8, scale: 0.6 }}
             className="project__items card card-two"
             key={id}
           >
@@ -22,8 +24,14 @@ const Items = ({ projectsItems }) => {
             </div>
             <span className="project__category ">{category}</span>
             <h3 className="project__title">{title}</h3>
-            <a href= '' className="link">
-              <GoMarkGithub style={{ marginLeft: "5px" }} />
+            <a href="" className="link">
+              {category === "Development" ? (
+                <GoMarkGithub style={{ marginLeft: "5px" }} />
+              ) : category === "UI UX Design" ? (
+                <FaFigma />
+              ) : (
+                <SiAdobeillustrator />
+              )}
             </a>
             <a href={link} className="link2">
               {demo}

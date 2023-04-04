@@ -17,7 +17,7 @@
 }
 .projects__list-item{
     color:var(--secondary-color);
-    font-size:var(--tiny-font-size);
+    font-size:var(--normal-font-size);
     font-weight:700;
     position:relative;
     transition: all 0.5s var(--transition);
