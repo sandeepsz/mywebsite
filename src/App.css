@@ -62,6 +62,7 @@
 
 .light-theme {
   --text-color:rgb(50, 50, 50);
+  --secondary-color: rgb(50, 50, 50);
   --title-color: #262626; 
   --bg-color: #f0ebe3;
   --bg-color-alt: rgba(255,255,255,1);
