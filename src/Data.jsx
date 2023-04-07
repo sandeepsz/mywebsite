@@ -69,7 +69,7 @@ export const projects = [
   {
     id: 6,
     img:  Coming,
-    category: 'Branding',
+    category: 'Development',
     title: 'Kana',
     link: 'https://www.youtube.com/',
     demo : "Demo"
