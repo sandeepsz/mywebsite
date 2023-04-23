@@ -13,6 +13,7 @@ const Header = () => {
     if (localStorage.getItem("theme_Toggle")) {
       theme_Toggle = localStorage.getItem("theme_Toggle");
     }
+    return theme_Toggle;
   };
   const [showMenu, setShowMenu] = useState(false);
   const [theme_Toggle, setTheme_Toggle] = useState(getStorageTheme());
