@@ -54,9 +54,9 @@
 
 
 .project__img{
-    height:240px;
+    height:100%;
     width:100%;
-    object-fit: cover;
+    /* object-fit: cover; */
     vertical-align: bottom;
     transition: all 1s var(--transition);
 }

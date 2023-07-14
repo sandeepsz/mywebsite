@@ -3,6 +3,7 @@ import profileImg from "../../assets/me.png";
 import { FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
 import resume from "../../assets/resume.pdf";
 import "./home.css";
+import   {skills} from './../../Data'
 
 const Home = () => {
   return (
@@ -30,20 +31,15 @@ const Home = () => {
           <div className="home_skills_container">
             <p>MY SKILLS</p>
             <div className="home_skills">
-              <div className="skill1">React</div>
-              <div className="skill2">Express</div>
-              <div className="skill3">NodeJS</div>
-              <div className="skill4">MongoDB</div>
-              <div className="skill5">MYSQL</div>
-              <div className="skill6">MaterialUI</div>
-              <div className="skill7">AntDesign</div>
-              <div className="skill8">TypeScript</div>
+            {skills.map((item, id)=>{
+              return <div className="skills-items">{item}</div>
+            })}
             </div>
           </div>
         </div>
 
         <p className="home__text">
-          Hi, I'm Sandip Nepali. A passionate Fullstack Developer based in Kathmandu,Nepal
+         A passionate Fullstack Developer based in Kathmandu,Nepal
         </p>
 
         <div className="home__socials">
@@ -65,7 +61,7 @@ const Home = () => {
             Download CV
           </a>
           <a href="" className="hero__link text-cs">
-            My Skills
+            <p>My Skills</p> 
           </a>
         </div>
       </div>

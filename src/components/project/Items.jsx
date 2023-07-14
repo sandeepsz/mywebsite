@@ -24,10 +24,10 @@ const Items = ({ projectsItems }) => {
             </div>
             <span className="project__category ">{category}</span>
             <h3 className="project__title">{title}</h3>
-            <a href="" className="link">
+            <a href={link} className="link">
               {category === "Development" ? (
                 <GoMarkGithub style={{ marginLeft: "5px" }} />
-              ) : category === "UI UX Design" ? (
+              ) : category === "Figma" ? (
                 <FaFigma />
               ) : (
                 <SiAdobeillustrator />

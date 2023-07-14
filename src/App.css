@@ -13,6 +13,7 @@
   --bg-color: hsl(216, 18%, 16%);
   --bg-color-alt: hsl(213, 10%, 21%);
   --container-color: hsl(217, 18%, 14%);
+  --smooth-color:#c2ffc2;
   --border-color: hsl(210, 2%, 65%);
   --footer-border: rgba(255, 255, 255, 0.07);
   --first-gradient: linear-gradient(
@@ -166,6 +167,7 @@ img {
 }
 
 .btn {
+  margin-top: 20px;
   border: 2px solid var(--text-color);
   padding-inline: 40px;
   border-radius: 55px;
