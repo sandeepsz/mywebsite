@@ -1,7 +1,7 @@
 import Project1 from "./assets/project1.jpeg";
 import Coming from "./assets/cm.jpg";
 import Coin from "./assets/projects/coin.gif";
-import Godot from "./assets/projects/godot.gif";
+
 import TechPalika from "./assets/figma-design/Techpalika-2.jpg";
 // import Project6 from "./assets/project6.jpg"
 import html from "./assets/skills/html1.png";
@@ -49,7 +49,7 @@ export const projects = [
   },
   {
     id: 2,
-    img: Godot,
+    img: Coming,
     category: "Medium",
     title: "Gooir",
     link: "https://www.youtube.com/",
