@@ -9,7 +9,7 @@ import { animateScroll } from "react-scroll";
 
 const Header = () => {
   const getStorageTheme = () => {
-    let theme_Toggle = "light-theme";
+    let theme_Toggle = "dark-theme";
     if (localStorage.getItem("theme_Toggle")) {
       theme_Toggle = localStorage.getItem("theme_Toggle");
     }
@@ -18,21 +18,21 @@ const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [theme_Toggle, setTheme_Toggle] = useState(getStorageTheme());
   const [scrollNav, setScrollNav] = useState(false);
-  const scrollTop = () =>{
+  const scrollTop = () => {
     animateScroll.scrollToTop();
   };
 
-  const changeNav = () =>{
-    if(window.scrollY >=80){
-      setScrollNav(true)
-    }else{
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScrollNav(true);
+    } else {
       setScrollNav(false);
     }
-  }
+  };
 
-  useEffect(()=>{
-    window.addEventListener('scroll', changeNav)
-  },[])
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  }, []);
 
   useEffect(() => {
     console.log(document.body.classList);
@@ -53,9 +53,11 @@ const Header = () => {
   };
 
   return (
-    <header className={`${scrollNav ? 'scroll-header': ''} header` }>
+    <header className={`${scrollNav ? "scroll-header" : ""} header`}>
       <nav className="nav">
-        <Link to= '/' onClick={scrollTop} className="nav__logo text-cs">San_Deep</Link>
+        <Link to="/" onClick={scrollTop} className="nav__logo text-cs">
+          San_Deep
+        </Link>
         <div className={`${showMenu ? "nav__menu show-menu" : "nav__menu"}`}>
           <ul className="nav__list">
             {links.map(({ name, path }, index) => {
@@ -70,7 +72,7 @@ const Header = () => {
                     duration={500}
                     onClick={() => setShowMenu(!showMenu)}
                   >
-                   {name}
+                    {name}
                   </Link>
                 </li>
               );

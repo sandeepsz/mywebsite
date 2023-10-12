@@ -9,23 +9,20 @@ const projectNavList = [
   ...new Set(projects.map((project) => project.category)),
 ];
 
-
 const Projects = () => {
   const [projectsItems, setProjectsItems] = useState(projects);
   const [navList, setCategories] = useState(projectNavList);
 
   const filterItems = (category) => {
-    if(category === 'all'){
+    if (category === "all") {
       setProjectsItems(projects);
       return;
-
     }
     const newProjectsItems = projects.filter(
       (item) => item.category === category
     );
 
     setProjectsItems(newProjectsItems);
-
   };
 
   return (
@@ -34,7 +31,7 @@ const Projects = () => {
       <p className="project__subtitle text-cs">
         My <span className="text-stuff">Stuffs</span>
       </p>
-      <List list={navList} filterItems ={filterItems} />
+      <List list={navList} filterItems={filterItems} />
       <div className="project__container container  grid">
         <Items projectsItems={projectsItems} />
       </div>

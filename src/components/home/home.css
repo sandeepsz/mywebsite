@@ -10,7 +10,6 @@
   position: relative;
 }
 
-
 .home__subtitle,
 .home__job {
   font-weight: 700;
@@ -21,11 +20,11 @@
   font-size: var(--small-font-size);
 }
 
-.home__subtitle{
+.home__subtitle {
   color: var(--text-color);
 }
-.home_inner_subtitle{
-  color:var(--primary-color)
+.home_inner_subtitle {
+  color: var(--primary-color);
 }
 .home__title span {
   color: var(--primary-color);
@@ -75,15 +74,15 @@
 .hero__link::before {
   content: "";
   position: absolute;
-  display:none;
+  display: none;
   top: 50%;
   left: -70%;
   width: 40px;
   height: 2px;
   background-color: var(--text-color);
 }
-.hero__link p{
-  display:none;
+.hero__link p {
+  display: none;
 }
 
 .home__img-wrapper {
@@ -108,6 +107,9 @@
   position: absolute;
   margin-top: 30px;
 }
+.home_skills-mobile {
+  display: none;
+}
 
 .home_skills h3 {
   margin-bottom: 23px;
@@ -118,12 +120,12 @@
 }
 .home_skills {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
 }
+
 .home_skills div {
   font-family: var(--body-font);
-  font-size: 17px;
 }
 
 .home_skills_container p {
@@ -132,15 +134,12 @@
   margin-bottom: 10px;
 }
 
-.skills-items{
+.skills-items {
   margin: 2px;
   background-color: var(--smooth-color);
   padding: 2px 8px;
-  color: var(--title-color)
-
+  color: var(--title-color);
 }
-
-
 
 @media only screen and (max-width: 768px) {
   .home__img-wrapper {
@@ -151,6 +150,10 @@
     width: 60%;
   }
 
+  .home__btns {
+    display: block;
+  }
+
   .home__text {
     display: block;
     align-items: center;
@@ -158,19 +161,37 @@
   .home__title {
     font-size: 40px;
   }
- 
+
   .grid {
     display: block;
   }
 
   .home_skills {
-    position:relative;
+    position: relative;
     display: none;
     /* margin-left: 350px; */
- 
   }
-  .hero__link p{
-    display:block;
+
+  .skills-title {
+    font-size: var(--h2-font-size);
+    font-weight: 700;
+    display: flex;
+    margin: 10px 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home_skills-mobile {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 8px;
+  }
+  .home_skills-mobile h1 {
+    width: 100%;
+  }
+  .hero__link p {
+    display: block;
   }
   .home__socials {
     align-items: center;
