@@ -1,0 +1,24 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  border: 1px solid var(--shadow);
+}
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contact-list span {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.contact-list-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}

@@ -9,7 +9,7 @@ const Items = ({ projectsItems }) => {
   return (
     <>
       {projectsItems.map((projectsItems) => {
-        const { id, img, category, title, demo, link } = projectsItems;
+        const { id, img, category, title, demo, link1, link2 } = projectsItems;
         return (
           <motion.div
             layout
@@ -24,16 +24,10 @@ const Items = ({ projectsItems }) => {
             </div>
             <span className="project__category ">{category}</span>
             <h3 className="project__title">{title}</h3>
-            <a href={link} className="link">
-              {category === "Development" ? (
-                <GoMarkGithub style={{ marginLeft: "5px" }} />
-              ) : category === "Figma" ? (
-                <FaFigma />
-              ) : (
-                <SiAdobeillustrator />
-              )}
+            <a href={link2} className="link">
+              <GoMarkGithub style={{ marginLeft: "5px" }} />
             </a>
-            <a href={link} className="link2">
+            <a href={link1} className="link2">
               {demo}
             </a>
           </motion.div>

@@ -14,7 +14,7 @@ import node from "./assets/skills/node.png";
 import tailwind from "./assets/skills/tailwind.png";
 import sass from "./assets/skills/sass.png";
 import github from "./assets/skills/github.png";
-
+import Todo from "./assets/projects/Todo.png";
 export const links = [
   {
     name: "Home",
@@ -41,10 +41,11 @@ export const links = [
 export const projects = [
   {
     id: 1,
-    img: Coin,
+    img: Todo,
     category: "Easy",
-    title: "Kitab_Suchi",
-    link: "https://www.youtube.com/",
+    title: "Todo List",
+    link1: "https://todo-list-using-react-blue.vercel.app/",
+    link2: "https://github.com/sandeepNpl/Todo-List-Using-React",
     demo: "Demo",
   },
   {
@@ -57,7 +58,7 @@ export const projects = [
   },
   {
     id: 3,
-    img: Coming,
+    img: Todo,
     category: "Hard",
     title: "Kana",
     link: "https://www.youtube.com/",
