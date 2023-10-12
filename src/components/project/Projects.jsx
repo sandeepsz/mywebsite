@@ -26,7 +26,7 @@ const Projects = () => {
   };
 
   return (
-    <section className="project section text-cs" id="project">
+    <section className="section text-cs" id="project">
       <h2 className="section__title text-cs">Projects</h2>
       <p className="project__subtitle text-cs">
         My <span className="text-stuff">Stuffs</span>
