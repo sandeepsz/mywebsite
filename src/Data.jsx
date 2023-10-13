@@ -16,6 +16,7 @@ import sass from "./assets/skills/sass.png";
 import github from "./assets/skills/github.png";
 import Todo from "./assets/projects/Todo.png";
 import Tictactoe from "./assets/projects/tic-tac-toe.png";
+import Form from "./assets/projects/form.png";
 export const links = [
   {
     name: "Home",
@@ -60,10 +61,11 @@ export const projects = [
   },
   {
     id: 3,
-    img: Todo,
-    category: "Hard",
-    title: "Kana",
-    link: "https://www.youtube.com/",
+    img: Form,
+    category: "Easy",
+    title: "Form Collection",
+    link1: "https://form-collection.vercel.app/",
+    link2: "https://github.com/sandeepNpl/Form-Collection",
     demo: "Demo",
   },
 
