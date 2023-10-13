@@ -15,6 +15,7 @@ import tailwind from "./assets/skills/tailwind.png";
 import sass from "./assets/skills/sass.png";
 import github from "./assets/skills/github.png";
 import Todo from "./assets/projects/Todo.png";
+import Tictactoe from "./assets/projects/tic-tac-toe.png";
 export const links = [
   {
     name: "Home",
@@ -50,10 +51,11 @@ export const projects = [
   },
   {
     id: 2,
-    img: Coming,
+    img: Tictactoe,
     category: "Medium",
-    title: "Gooir",
-    link: "https://www.youtube.com/",
+    title: "Tic-Tac-Toe Game",
+    link1: "https://tic-tac-toe-game-seven-alpha.vercel.app/",
+    link2: "https://github.com/sandeepNpl/Tic-Tac-Toe-Game-Using-JS",
     demo: "Demo",
   },
   {
