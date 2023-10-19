@@ -1,9 +1,9 @@
 import React from "react";
 import profileImg from "../../assets/me.png";
 import { FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
-import resume from "../../assets/resume.pdf";
 import "./home.css";
 import { skills } from "./../../Data";
+import resume from "./../../assets/document/resume.pdf";
 
 const Home = () => {
   return (
