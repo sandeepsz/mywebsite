@@ -14,7 +14,8 @@ import Tictactoe from "./assets/projects/tic-tac-toe.png";
 import Form from "./assets/projects/form.png";
 import Tour from "./assets/projects/tour.png";
 import Cuberun from "./assets/projects/cube.gif";
-
+import flying from "./assets/projects/flying.gif";
+import loader from "./assets/projects/loader.gif";
 export const links = [
   {
     name: "Home",
@@ -82,6 +83,26 @@ export const projects = [
     title: "Cube Run Game",
     link1: "https://npbtsandip.itch.io/cuberun-web-game/",
     link2: "https://github.com/sandeepNpl/CUBERUN-Game",
+    demo: "Demo",
+  },
+  {
+    id: 6,
+    img: flying,
+    category: "Easy",
+    title: "Flying Bubble",
+    link1: "https://luxury-pony-90e33c.netlify.app/",
+    link2:
+      "https://github.com/sandeepsz/CSS-Project/tree/master/Flying%20Bubbles",
+    demo: "Demo",
+  },
+  {
+    id: 7,
+    img: loader,
+    category: "Easy",
+    title: "Loader ",
+    link1:
+      "https://657fdc231d85b871e6439431--charming-peony-da86e6.netlify.app/",
+    link2: "https://github.com/sandeepsz/CSS-Project/tree/master/Loader",
     demo: "Demo",
   },
 ];
