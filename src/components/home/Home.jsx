@@ -4,12 +4,23 @@ import { FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
 import "./home.css";
 import { skills } from "./../../Data";
 import resume from "./../../assets/document/resume.pdf";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
     <section className="home" id="home">
       <div className="home__container container">
-        <div className="home__text">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ dudration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          className="home__text"
+        >
           <p className="home__subtitle text-cs">
             Hello, <span className="home_inner_subtitle">My Name Is</span>
           </p>
@@ -19,14 +30,24 @@ const Home = () => {
           </h1>
 
           <p className="home__job">
-            <span className="text-cs">I Am</span> <b>Web Developer</b>
+            <span className="text-cs">I Am</span> <b>Fullstack Developer</b>
           </p>
-        </div>
+        </motion.div>
 
         <div className="home__img-wrapper">
-          <div className="home__banner">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ dudration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            className="home__banner"
+          >
             <img src={profileImg} alt="" className="home__profile" />
-          </div>
+          </motion.div>
 
           <div className="home_skills_container">
             <p>MY SKILLS</p>

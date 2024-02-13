@@ -35,7 +35,6 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    console.log(document.body.classList);
     document.body.classList.toggle("no-scroll", showMenu);
   }, [showMenu]);
 
