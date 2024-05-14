@@ -55,6 +55,7 @@ const Home = () => {
               {skills.map((item, id) => {
                 return (
                   <img
+                    key={item.id}
                     style={{
                       width: "100%",
                       height: "100%",
