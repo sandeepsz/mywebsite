@@ -90,40 +90,6 @@ html {
 
 /* css for mask background */
 
-.absolute {
-  position: absolute;
-}
-
-.bottom-0 {
-  bottom: 0;
-}
-
-.left-0 {
-  left: 0;
-}
-
-.right-0 {
-  right: 0;
-}
-
-.top-0 {
-  top: 0;
-}
-
-.bg-linear-gradient {
-  background-image: linear-gradient(to right, #4f4f4f2e 1px, transparent 1px),
-    linear-gradient(to bottom, #4f4f4f2e 1px, transparent 1px);
-}
-
-.bg-size {
-  background-size: 14px 24px;
-}
-
-.main {
-  overflow-y: scroll;
-  height: 100vh;
-}
-
 button,
 input,
 body {

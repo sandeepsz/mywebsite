@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 const Home = () => {
   return (
     <section className="home" id="home">
+      <div className="back-image"></div>
       <div className="home__container container">
         <motion.div
           initial="hidden"
@@ -49,7 +50,7 @@ const Home = () => {
             <img src={profileImg} alt="" className="home__profile" />
           </motion.div>
 
-          <div className="home_skills_container">
+          {/* <div className="home_skills_container">
             <p>MY SKILLS</p>
             <div className="home_skills">
               {skills.map((item, id) => {
@@ -70,7 +71,7 @@ const Home = () => {
                 );
               })}
             </div>
-          </div>
+          </div> */}
         </div>
 
         <p className="home__text">
