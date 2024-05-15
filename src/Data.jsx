@@ -9,6 +9,14 @@ import loader from "./assets/projects/loader.gif";
 import { FaReact } from "react-icons/fa";
 import { TbBrandTypescript } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io";
+import { FileIconsNextjs } from "./components/SvgIcon/Next";
+import { LaJsSquare } from "./components/SvgIcon/Javascript";
+import { SkillIconsTailwindcssDark } from "./components/SvgIcon/Tailwind";
+import { SkillIconsReactDark } from "./components/SvgIcon/React";
+import { SimpleIconsGithub } from "./components/SvgIcon/github";
+import { SimpleIconsShadcnui } from "./components/SvgIcon/Shadcn";
+import { FaNode } from "react-icons/fa";
+import { SiAntdesign } from "react-icons/si";
 
 export const links = [
   {
@@ -101,7 +109,7 @@ export const skills = [
   {
     id: 1,
     title: "Javascript",
-    icon: <IoLogoJavascript style={{ width: "40px", height: "40px" }} />,
+    icon: <LaJsSquare />,
   },
   {
     id: 2,
@@ -110,33 +118,38 @@ export const skills = [
   },
   {
     id: 3,
-    title: "React",
-    icon: <FaReact style={{ width: "40px", height: "40px" }} />,
+    title: "ReactJs",
+    icon: <SkillIconsReactDark />,
   },
   {
     id: 4,
-    title: "Next",
-    icon: <FaReact style={{ width: "40px", height: "40px" }} />,
+    title: "NextJs",
+    icon: <FileIconsNextjs />,
   },
   {
     id: 5,
-    title: "Node.js",
-    icon: <FaReact style={{ width: "40px", height: "40px" }} />,
+    title: "NodeJs",
+    icon: <FaNode style={{ width: "50px", height: "50px" }} />,
   },
   {
     id: 6,
-    title: "Taiwind",
-    icon: <FaReact style={{ width: "40px", height: "40px" }} />,
+    title: "AntDesign",
+    icon: <SiAntdesign style={{ width: "40px", height: "40px" }} />,
   },
   {
     id: 7,
-    title: "Shadcn UI",
-    icon: <FaReact style={{ width: "40px", height: "40px" }} />,
+    title: "ShadcnUI",
+    icon: <SimpleIconsShadcnui />,
+  },
+  {
+    id: 7,
+    title: "Tailwind",
+    icon: <SkillIconsTailwindcssDark />,
   },
   {
     id: 8,
     title: "Github",
-    icon: <FaReact style={{ width: "40px", height: "40px" }} />,
+    icon: <SimpleIconsGithub />,
   },
 ];
 
