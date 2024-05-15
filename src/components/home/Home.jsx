@@ -1,6 +1,6 @@
 import React from "react";
 import profileImg from "../../assets/me.png";
-import { FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaTwitter, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import "./home.css";
 import { skills } from "./../../Data";
 import resume from "./../../assets/document/resume.pdf";
@@ -27,7 +27,7 @@ const Home = () => {
           </p>
 
           <h1 className="home__title ">
-            <span>SANDIP</span> NEPALI
+            <span>SANDEEP</span> NEPALI
           </h1>
 
           <p className="home__job">
@@ -49,29 +49,6 @@ const Home = () => {
           >
             <img src={profileImg} alt="" className="home__profile" />
           </motion.div>
-
-          {/* <div className="home_skills_container">
-            <p>MY SKILLS</p>
-            <div className="home_skills">
-              {skills.map((item, id) => {
-                return (
-                  <img
-                    key={item.id}
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "contain",
-                      borderRadius: "10px",
-                      backgroundColor: "white",
-                    }}
-                    src={item.img}
-                    width="40px"
-                    alt=""
-                  />
-                );
-              })}
-            </div>
-          </div> */}
         </div>
 
         <p className="home__text">
@@ -80,10 +57,10 @@ const Home = () => {
 
         <div className="home__socials">
           <a
-            href="https://twitter.com/SandeepNepali18"
+            href="https://www.linkedin.com/in/sandipnepali110/"
             className="home__social-links"
           >
-            <FaTwitter />
+            <FaLinkedin />
           </a>
 
           <a

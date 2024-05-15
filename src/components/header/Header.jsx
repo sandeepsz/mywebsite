@@ -6,6 +6,7 @@ import "./header.css";
 import { Link } from "react-scroll";
 import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll";
 import { animateScroll } from "react-scroll";
+import { FaChessBoard } from "react-icons/fa";
 
 const Header = () => {
   const getStorageTheme = () => {
