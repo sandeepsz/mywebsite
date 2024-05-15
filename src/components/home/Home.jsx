@@ -106,29 +106,6 @@ const Home = () => {
             Download CV
           </a>
         </div>
-
-        <div className="skills-title text-cs">
-          <p>My Skills</p>
-        </div>
-
-        <div className="home_skills-mobile">
-          {skills.map((item, id) => {
-            return (
-              <img
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "contain",
-                  borderRadius: "10px",
-                  backgroundColor: "white",
-                }}
-                src={item.img}
-                width="40px"
-                alt=""
-              />
-            );
-          })}
-        </div>
       </div>
     </section>
   );

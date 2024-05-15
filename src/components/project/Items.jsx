@@ -1,5 +1,5 @@
 import React from "react";
-import { GoMarkGithub } from "react-icons/go";
+// import { GoMarkGithub } from "react-icons/go";
 import { FaFigma } from "react-icons/fa";
 import { SiAdobeillustrator } from "react-icons/si";
 
@@ -25,7 +25,7 @@ const Items = ({ projectsItems }) => {
             <span className="project__category ">{category}</span>
             <h3 className="project__title">{title}</h3>
             <a href={link2} className="link">
-              <GoMarkGithub style={{ marginLeft: "5px" }} />
+              {/* <GoMarkGithub style={{ marginLeft: "5px" }} /> */}
             </a>
             <a href={link1} className="link2">
               {demo}

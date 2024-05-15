@@ -1,0 +1,122 @@
+/* .skills {
+  position: relative;
+  display: grid;
+  margin-top: 30px;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  transition: all;
+}
+.skill {
+  display: flex;
+  color: var(--text-color);
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--primary-color);
+  border-radius: 15px;
+}
+.skill:hover {
+  color: var(--primary-color);
+}
+.skill-text {
+  font-size: 20px;
+}
+@media only screen and (max-width: 768px) {
+  ._skill-container {
+    margin-top: 200px;
+  }
+  .skills {
+    display: flex;
+    overflow-x: auto;
+  }
+  .skill {
+    margin: 20px 30px;
+  }
+} */
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee2 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.item-center {
+  align-items: center;
+  justify-content: center;
+}
+.stack {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+}
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+.animate-marquee:hover {
+  animation: pause;
+}
+.animate-marquee2 {
+  animation: marquee2 25s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .marquee-container {
+    padding: 1rem 0;
+    width: 20px;
+  }
+
+  .marquee-item {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+  }
+}

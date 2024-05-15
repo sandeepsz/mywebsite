@@ -12,8 +12,8 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: linear-gradient(to right, #4f4f4f2e 1px, transparent 1px),
-    linear-gradient(to bottom, #4f4f4f2e 1px, transparent 1px);
+  background-image: linear-gradient(to right, #21ac8932 1px, transparent 1px),
+    linear-gradient(to bottom, #30b49332 1px, transparent 1px);
   background-size: 14px 24px;
   -webkit-mask-image: radial-gradient(
     ellipse 60% 50% at 50% 0%,

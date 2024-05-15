@@ -1,14 +1,4 @@
 import Coin from "./assets/projects/coin.gif";
-import html from "./assets/skills/html1.png";
-import css from "./assets/skills/css1.png";
-import javascript from "./assets/skills/js.png";
-import ts from "./assets/skills/ts.png";
-import react from "./assets/skills/react.png";
-import next from "./assets/skills/next.png";
-import node from "./assets/skills/node.png";
-import tailwind from "./assets/skills/tailwind.png";
-import sass from "./assets/skills/sass.png";
-import github from "./assets/skills/github.png";
 import Todo from "./assets/projects/Todo.png";
 import Tictactoe from "./assets/projects/tic-tac-toe.png";
 import Form from "./assets/projects/form.png";
@@ -16,6 +6,10 @@ import Tour from "./assets/projects/tour.png";
 import Cuberun from "./assets/projects/cube.gif";
 import flying from "./assets/projects/flying.gif";
 import loader from "./assets/projects/loader.gif";
+import { FaReact } from "react-icons/fa";
+import { TbBrandTypescript } from "react-icons/tb";
+import { IoLogoJavascript } from "react-icons/io";
+
 export const links = [
   {
     name: "Home",
@@ -106,42 +100,55 @@ export const projects = [
 export const skills = [
   {
     id: 1,
-    img: html,
+    title: "Javascript",
+    icon: <IoLogoJavascript style={{ width: "40px", height: "40px" }} />,
   },
   {
     id: 2,
-    img: css,
+    title: "Typescript",
+    icon: <TbBrandTypescript style={{ width: "40px", height: "40px" }} />,
   },
   {
     id: 3,
-    img: javascript,
+    title: "React",
+    icon: <FaReact style={{ width: "40px", height: "40px" }} />,
   },
   {
     id: 4,
-    img: ts,
+    title: "Next",
+    icon: <FaReact style={{ width: "40px", height: "40px" }} />,
   },
   {
     id: 5,
-    img: react,
+    title: "Node.js",
+    icon: <FaReact style={{ width: "40px", height: "40px" }} />,
   },
   {
     id: 6,
-    img: next,
+    title: "Taiwind",
+    icon: <FaReact style={{ width: "40px", height: "40px" }} />,
   },
   {
     id: 7,
-    img: node,
+    title: "Shadcn UI",
+    icon: <FaReact style={{ width: "40px", height: "40px" }} />,
   },
   {
     id: 8,
-    img: tailwind,
-  },
-  {
-    id: 9,
-    img: sass,
-  },
-  {
-    id: 10,
-    img: github,
+    title: "Github",
+    icon: <FaReact style={{ width: "40px", height: "40px" }} />,
   },
 ];
+
+// export const skills = [
+//   {
+//     id: 1,
+//     title: "Javascript",
+//     svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-current"><path d="M4.669 19.82c-.17.159-.354.318-.625.318-.399 0-.573-.222-.573-.57V4.849c0-.275.11-.42.37-.42.16 0 .27.09.41.25l8.08 9.16v-.06c-.04-.06-3.91-4.59-3.91-4.59-.11-.12-.26-.22-.43-.22-.16 0-.31.1-.41.25l-3.5 5.55v8.69c0 .35.174.56.523.56.15 0 .29-.07.4-.18l1.29-1.2 2.7 2.86c.15.15.35.23.55.23.19 0 .37-.08.51-.23l6.07-5.9c.16-.15.25-.35.25-.56 0-.2-.1-.37-.26-.52-.33-.34-.93-.34-1.27.01l-5.1 5.04s3.47 3.6 3.82 3.96c.14.14.31.22.5.22.24 0 .48-.1.64-.3.16-.2.23-.46.16-.72-.05-.25-.22-.45-.47-.56-1.25-.56-2.46-1.23-3.66-2.01-.3-.22-.6-.45-.89-.68l-.96.87-.8-.87c-.33-.33-.71-.67-1.12-1.02-.42-.35-.8-.65-1.12-.9l-.64-.5v2.24l.59.54c.26.24.53.5.82.78.7.68 1.42 1.4 2.14 2.16.27.28.53.56.76.85l1.13 1.44-3.84 3.77-5.48-6.21h3.08c.34 0 .64-.16.85-.47l1.53-1.81-4.54-5.22h-4.3l.44.47c.2.21.44.44.69.7.53.54 1.12 1.17 1.79 1.9.41.45.79.86 1.14 1.22l2.19 2.49-4.19 4.18z"/></svg>`,
+//   },
+//   {
+//     id: 2,
+//     title: "Typescript",
+//     svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-current"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 7h2v2h-2zm0 4h2v6h-2z"/></svg>`,
+//   },
+// ];
