@@ -41,7 +41,7 @@ const BeeModel = () => {
     scene.fog = new THREE.Fog(0x1111111, 200, 1000);
 
     const loader = new GLTFLoader();
-    loader.load("/src/assets/model/demon_bee_full_texture.glb", (gltf) => {
+    loader.load("/model/demon_bee_full_texture.glb", (gltf) => {
       const bee = gltf.scene;
       modelRef.current = bee;
       bee.scale.set(scaleFactor, scaleFactor, scaleFactor);
