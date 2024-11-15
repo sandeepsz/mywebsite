@@ -9,7 +9,7 @@ const List = ({ list, filterItems }) => {
         return (
           <button
             className={`${
-              active === index ? 'active-work' : ''
+              active === index ? "active-work" : ""
             } projects__list-item`}
             key={index}
             onClick={() => {

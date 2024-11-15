@@ -56,7 +56,7 @@ const Header = () => {
     <header className={`${scrollNav ? "scroll-header" : ""} header`}>
       <nav className="nav">
         <Link to="/" onClick={scrollTop} className="nav__logo text-cs">
-          San_Deep
+          San_DIP
         </Link>
         <div className={`${showMenu ? "nav__menu show-menu" : "nav__menu"}`}>
           <ul className="nav__list">
@@ -80,14 +80,6 @@ const Header = () => {
           </ul>
         </div>
         <div className="nav__btns">
-          <div className="theme__toggler" onClick={toggleTheme}>
-            {theme_Toggle === "light-theme" ? (
-              <BsMoon style={{ color: "black" }} />
-            ) : (
-              <BsSun />
-            )}
-          </div>
-
           <div
             className={`${
               showMenu ? " nav__toggle cross_sign" : "nav__toggle"

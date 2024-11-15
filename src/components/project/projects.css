@@ -1,3 +1,6 @@
+#project {
+  z-index: 12 !important;
+}
 .project__subtitle {
   text-align: center;
   margin-top: 12px;
@@ -84,17 +87,21 @@
   color: var(--text-color);
   position: absolute;
   transition: all 1s var(--transition);
+  z-index: 100;
 }
 .link2:hover {
   color: var(--primary-color);
 }
 
 @media only screen and (max-width: 768px) {
+  .margin-t {
+    margin-top: 0px;
+  }
   .projects__list-item {
     font-size: var(--smaller-font-size);
     font-weight: 500;
   }
   .projects__list {
-    margin: 20px 6px;
+    margin: 10px 6px;
   }
 }

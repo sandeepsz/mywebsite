@@ -5,10 +5,15 @@ import "./home.css";
 import { skills } from "./../../Data";
 import resume from "./../../assets/document/resume.pdf";
 import { motion } from "framer-motion";
-
+import hljs from "highlight.js";
+import "highlight.js/styles/github-dark.css";
 const Home = () => {
+  const codeString = `<p>A passionate Fullstack Developer based in Kathmandu, Nepal. Skilled in building scalable web applications and interactive user experiences  Continuously learning and adapting to new technologies to deliver high-quality solutions.</p>`;
+
+  // Highlight the code
+  const highlightedCode = hljs.highlight(codeString, { language: "xml" }).value;
   return (
-    <section className="home" id="home">
+    <section className="home section" id="home">
       <div className="back-image"></div>
       <div className="home__container container">
         <motion.div
@@ -23,15 +28,14 @@ const Home = () => {
           className="home__text"
         >
           <p className="home__subtitle text-cs">
-            Hello, <span className="home_inner_subtitle">My Name Is</span>
+            Hello, <span className="home_inner_subtitle">I am</span>
           </p>
 
           <h1 className="home__title ">
-            <span>SANDEEP</span> NEPALI
+            <span>SANDIP</span> NEPALI
           </h1>
-
           <p className="home__job">
-            <span className="text-cs">I Am</span> <b>Fullstack Developer</b>
+            <b>A Fullstack Developer</b>
           </p>
         </motion.div>
 
@@ -50,9 +54,11 @@ const Home = () => {
             <img src={profileImg} alt="" className="home__profile" />
           </motion.div>
         </div>
-
-        <p className="home__text">
-          A passionate Fullstack Developer based in Kathmandu,Nepal
+        <p class="home__text">
+          A passionate Fullstack Developer based in Kathmandu, Nepal. Skilled in
+          building scalable web applications and interactive user experiences.
+          Continuously learning and adapting to new technologies to deliver
+          high-quality solutions.
         </p>
 
         <div className="home__socials">

@@ -24,6 +24,10 @@ export const links = [
     path: "home",
   },
   {
+    name: "Skills",
+    path: "skill",
+  },
+  {
     name: "Projects",
     path: "project",
   },

@@ -7,15 +7,9 @@
   }
 }
 
-@keyframes marquee2 {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
+._skill-container {
+  z-index: 8;
 }
-
 .icon {
   color: var(--primary-color);
 }
@@ -43,12 +37,13 @@
   justify-content: center;
 }
 .stack {
-  padding: 1rem;
+  padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
   margin: 0 30px;
   border: 1px solid var(--primary-color);
   border-radius: 15px;
+  width: 200px;
 }
 .py-12 {
   padding-top: 3rem;
@@ -80,10 +75,7 @@
   animation: marquee 25s linear infinite;
 }
 .animate-marquee:hover {
-  animation: pause;
-}
-.animate-marquee2 {
-  animation: marquee2 25s linear infinite;
+  animation-play-state: paused;
 }
 
 @media (max-width: 768px) {

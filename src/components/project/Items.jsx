@@ -27,7 +27,7 @@ const Items = ({ projectsItems }) => {
             <a href={link2} className="link">
               {/* <GoMarkGithub style={{ marginLeft: "5px" }} /> */}
             </a>
-            <a href={link1} className="link2">
+            <a href={link1} target="_blank" className="link2">
               {demo}
             </a>
           </motion.div>

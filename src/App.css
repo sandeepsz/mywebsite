@@ -193,8 +193,9 @@ img {
 }
 
 .section {
-  /* background-color: rgb(247, 237, 224); */
-  margin-top: 50px;
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
 }
 
 .section__title,
@@ -228,14 +229,18 @@ img {
   padding: 30px;
 }
 
+#container3D {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+
 @media only screen and (max-width: 768px) {
   .grid {
     display: block;
   }
   .card {
     margin-bottom: 2.5%;
-  }
-  .section {
-    margin-top: 280px;
   }
 }
